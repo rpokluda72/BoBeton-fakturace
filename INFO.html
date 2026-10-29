@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>INFO – BoBeton Fakturace</title><link rel="stylesheet" href="styl.css"></head>
+<body><header><h1><a href="index.html">BoBeton – Fakturace</a></h1></header>
+<nav><a href="index.html" class="" style="border-bottom-color:#1d6f42">Přehled</a><a href="INFO.html" class="on" style="border-bottom-color:#1f4e79">INFO</a><a href="PREHLED_DL.html" class="" style="border-bottom-color:#c55a11">PREHLED_DL</a><a href="PREHLED_FAKTURY.html" class="" style="border-bottom-color:#c55a11">PREHLED_FAKTURY</a><a href="DODACI_LISTY.html" class="" style="border-bottom-color:#2f5597">DODACI_LISTY</a><a href="VYKONY_DL.html" class="" style="border-bottom-color:#2f5597">VYKONY_DL</a><a href="FAKTURY.html" class="" style="border-bottom-color:#548235">FAKTURY</a><a href="POLOZKY.html" class="" style="border-bottom-color:#548235">POLOZKY</a><a href="POHODA_FAKTURY.html" class="" style="border-bottom-color:#1f4e79">POHODA_FAKTURY</a><a href="POHODA_POLOZKY.html" class="" style="border-bottom-color:#1f4e79">POHODA_POLOZKY</a><a href="TYPY_POLOZEK.html" class="" style="border-bottom-color:#bf8f00">TYPY_POLOZEK</a><a href="CISELNIKY.html" class="" style="border-bottom-color:#7f7f7f">CISELNIKY</a><a href="ZAKAZNICI.html" class="" style="border-bottom-color:#a6a6a6">ZAKAZNICI</a><a href="STAVBY.html" class="" style="border-bottom-color:#a6a6a6">STAVBY</a><a href="SMLOUVY.html" class="" style="border-bottom-color:#a6a6a6">SMLOUVY</a><a href="SMLOUVY_BETONY.html" class="" style="border-bottom-color:#a6a6a6">SMLOUVY_BETONY</a><a href="RECEPTURY.html" class="" style="border-bottom-color:#a6a6a6">RECEPTURY</a><a href="AUTA.html" class="" style="border-bottom-color:#a6a6a6">AUTA</a><a href="RIDICI.html" class="" style="border-bottom-color:#a6a6a6">RIDICI</a><a href="CERPADLA.html" class="" style="border-bottom-color:#a6a6a6">CERPADLA</a><a href="VYKONY.html" class="" style="border-bottom-color:#a6a6a6">VYKONY</a><a href="ZONY.html" class="" style="border-bottom-color:#a6a6a6">ZONY</a><a href="IMPORTY.html" class="" style="border-bottom-color:#7f7f7f">IMPORTY</a><a href="NASTAVENI.html" class="" style="border-bottom-color:#000000">NASTAVENI</a><a href="formulare.html" class="" style="border-bottom-color:#7a7a7a">Formuláře</a></nav>
+<main><h2>INFO</h2>
+<p class="pozn">Úvodní list – postup práce a přehled listů. Celý list.</p>
+<div class="okno"><div class="list"><table class="xl" style="width:916px">
+<colgroup><col style="width:34px"><col style="width:182px"><col style="width:700px"></colgroup>
+<tr style="height:20px"><th class="rh"></th><th>A</th><th>B</th></tr>
+<tr style="height:24px"><th class="rh">1</th>
+<td class="sp" style="font-weight:700;color:#1f4e79;font-size:18.7px">BoBeton – fakturace z dodacích listů eMixu</td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">2</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:40px"><th class="rh">3</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Účel</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Faktury z dodacích listů eMixu bez přepisování: CSV z eMixu → faktury (formulář nebo hromadně) → XML pro POHODU → kontrola s fakturami v POHODĚ. Data jsou ukázková (Martek-eMix/ukazka-kody, září 2026).</div></td>
+</tr>
+<tr style="height:21px"><th class="rh">4</th>
+<td class="sp" style="font-weight:700;font-size:16.0px">Postup</td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:40px"><th class="rh">5</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">1. Číselníky</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">List CISELNIKY: složka s exporty Seznam_*.CSV, tlačítko Načíst číselníky. Každý číselník nahradí celou tabulku na svém listu (ZAKAZNICI, STAVBY, …) – číselníky se upravují v eMixu.</div></td>
+</tr>
+<tr style="height:60px"><th class="rh">6</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">2. Dodací listy</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">List DODACI_LISTY: soubor CSV, betonárna, Načíst DL z CSV. DL se přidají na konec (duplicita = betonárna + číslo DL), výkony DL (čerpadlo, příplatky) na list VYKONY_DL. Fakturace: K fakturaci / Hotově (platba hotově) / Storno; ručně lze nastavit Nefakturovat.</div></td>
+</tr>
+<tr style="height:100px"><th class="rh">7</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">3. Faktura</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">List FAKTURY: Nová faktura (Ctrl+Shift+F) nebo dvojklik na první prázdný řádek sloupce Číslo faktury. Ve formuláři vyberte zákazníka, zaškrtněte dodací listy a tlačítkem Vložit vybrané DL do položek vzniknou položky (beton podle receptury a ceny, doprava, výkony). Další položky (čerpadlo, potrubí, sleva…) přidáte typem z listu TYPY_POLOZEK. Uložit = řádek na FAKTURY a položky na POLOZKY; DL v položce typu BETON dostanou Fakturováno a číslo faktury.</div></td>
+</tr>
+<tr style="height:80px"><th class="rh">8</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Úprava: dvojklik na číslo faktury (FAKTURY i POLOZKY) nebo Upravit fakturu. Smazat fakturu (ve formuláři) smaže i položky a DL vrátí do stavu K fakturaci (vymaže u nich Fakturace a Číslo faktury). Exportovanou fakturu nejde smazat – nejdřív Zrušit export; fakturu v POHODĚ nejde smazat vůbec. Řádky faktur nemažte ručně – Kontrola a stav DL takové položky bez faktury ohlásí jako CHYBU.</div></td>
+</tr>
+<tr style="height:100px"><th class="rh">9</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Náhled a úprava DL</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">List DODACI_LISTY (nebo VYKONY_DL): Náhled / úprava DL (Ctrl+Shift+D) nebo dvojklik na Číslo DL. Náhled bere OZNAČENÉ řádky, jinak VIDITELNÉ řádky podle filtru a začne na aktivním řádku; šipky ← → listují. Údaje jsou jen ke čtení – tlačítko Upravit DL je zpřístupní (i zvláštní výkony), Uložit DL je zapíše na DODACI_LISTY a VYKONY_DL a do sloupce Upraveno dá jméno a čas. Kód zákazníka, stavby, receptury, auta a řidiče lze vybrat z číselníku (doplní se název).</div></td>
+</tr>
+<tr style="height:80px"><th class="rh">10</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">DL ve faktuře: po uložení změny formulář nabídne Aktualizovat fakturu z DL – položky z DL (beton, doprava, výkony) se vytvoří znovu podle aktuálních DL, ruční položky zůstanou. Náhled ukazuje, zda položky faktury odpovídají DL; tlačítko Aktualizovat fakturu z DL lze použít i po ruční změně buněk na listech DL. Fakturu v POHODĚ aktualizovat nejde, exportovanou až po potvrzení (změna se do POHODY sama nepřenese).</div></td>
+</tr>
+<tr style="height:60px"><th class="rh">11</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Ruční změny buněk na listech DODACI_LISTY a VYKONY_DL jsou také možné: Výkony Kč, Celkem bez DPH a Celkem Kč výkonu jsou vzorce. Načtení CSV v režimu Aktualizovat nevyfakturované ručně upravené DL přepíše daty z eMixu.</div></td>
+</tr>
+<tr style="height:80px"><th class="rh">12</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Faktury z vybraných DL</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">List DODACI_LISTY: označte nebo vyfiltrujte DL a Faktury z vybraných DL… Informační okno ukáže výběr, kolik DL je K fakturaci, kolik se přeskočí (Fakturováno, Hotově, Storno, Nefakturovat) a kolik faktur vznikne – jedna za zákazníka a smlouvu jako u Hromadně z DL. Bez označení a filtru se berou všechny DL K fakturaci (okno na to upozorní).</div></td>
+</tr>
+<tr style="height:100px"><th class="rh">13</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Smazat vybrané DL</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Pro opakované načtení CSV: označte nebo vyfiltrujte DL (např. filtr Soubor CSV) a Smazat vybrané DL… Smaže DL i jejich výkony; bez označení a filtru nic. DL v rozpracované faktuře se z faktury odeberou (položky z DL se vytvoří znovu ze zbylých DL, ruční zůstanou), faktura bez zbylých DL se smaže celá. Je-li některý DL ve faktuře exportované nebo v POHODĚ, nesmaže se nic (nejdřív Zrušit export). Před smazáním se ukáže upozornění se seznamem DL a faktur; smazání se zapíše do protokolu IMPORTY.</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">14</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Hromadně z DL</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Pro každého zákazníka a smlouvu vytvoří jednu fakturu ze všech DL K fakturaci do zadaného data.</div></td>
+</tr>
+<tr style="height:80px"><th class="rh">15</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Výběr faktur</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Vytvořit XML, Zrušit export a Náhled faktur pracují s fakturami: 1) OZNAČENÝCH řádků – výběr víc buněk v tabulce (tažení myší, Ctrl+klik, klik na čísla řádků vlevo); 2) jinak VIDITELNÝCH řádků podle filtru v záhlaví (Stav, Datum vystavení, Soubor XML…). Jedna označená buňka se za výběr nepovažuje. Jaký výběr se použil, ukáže informační okno před provedením.</div></td>
+</tr>
+<tr style="height:40px"><th class="rh">16</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">4. Náhled</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Označte nebo vyfiltrujte faktury, Náhled faktur (Ctrl+Shift+N) ukáže první fakturu s položkami; šipky ← → (PageUp/PageDown, Home/End) listují, Upravit otevře formulář. Bez výběru a bez filtru se náhled neotevře.</div></td>
+</tr>
+<tr style="height:80px"><th class="rh">17</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">5. XML pro POHODU</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Vytvořit XML: z vybraných faktur se exportují jen Rozpracované (exportované a faktury v POHODĚ se přeskočí). Soubor se pojmenuje podle dne: Faktury_RRRR-MM-DD.xml ve složce B2 (xml), další export téhož dne Faktury_RRRR-MM-DD_2.xml atd. Faktury dostanou Exportováno a Soubor XML (Stav = Exportováno). Import v POHODĚ: Soubor › Datová komunikace › XML import/export.</div></td>
+</tr>
+<tr style="height:80px"><th class="rh">18</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Zrušit export</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Pro opakovaný export: vyberte faktury ve stavu Exportováno (např. filtr Soubor XML) a Zrušit export. Faktury se vrátí do stavu Rozpracovaná a odeberou se ze souboru XML; když v souboru nic nezbude, soubor se smaže. Původní soubor se vždy zkopíruje do podsložky xml\zrusene. Faktury v POHODĚ (mají POHODA číslo a datum) vrátit nejde. Co už bylo do POHODY importováno, smažte tam ručně.</div></td>
+</tr>
+<tr style="height:120px"><th class="rh">19</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Porovnání s POHODOU</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Kontrola s aplikací (list POHODA_FAKTURY, spouští se i po načtení) spáruje faktury podle čísla (jinak var. symbolu) a porovná hlavičku – IČO, datum vystavení, DUZP, splatnost, formu úhrady, základ a celkem (tolerance 1 Kč, POHODA zaokrouhluje doklad) – i položky: párují se podle textu, porovná se množství, cena, celkem, sazba, jednotka a čísla DL v poznámce. Výsledek: FAKTURY a POLOZKY sloupec Kontrola POHODA (OK / ROZDÍL: co / NENÍ, CHYBÍ V POHODĚ), POHODA_FAKTURY a POHODA_POLOZKY sloupec V aplikaci (OK / ROZDÍL / JEN V POHODĚ). Položky POHODY bez částky (oddělovací řádky s datem) se nepárují.</div></td>
+</tr>
+<tr style="height:60px"><th class="rh">20</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Faktury z POHODY</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Jen ke čtení. Náhled faktur (dvojklik na číslo, Ctrl+Shift+N) – listování, u položek výsledek porovnání, tlačítko Faktura v aplikaci. Smazat vybrané faktury… (označené nebo vyfiltrované, např. filtr Soubor XML) smaže faktury i položky z listů POHODA_* před opakovaným načtením; v POHODĚ ani v aplikaci se nic nemaže.</div></td>
+</tr>
+<tr style="height:140px"><th class="rh">21</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">6. Faktury z POHODY</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Kontrola, že faktury v POHODĚ odpovídají aplikaci, a přenos čísla, data a úhrad z POHODY. a) Vytvořit požadavek XML (list POHODA_FAKTURY) uloží soubor s dotazem „pošli vydané faktury za období B4–D4“ (lst:listInvoiceRequest, vč. úhrad). b) Ten soubor importujte v POHODĚ stejně jako faktury (XML import/export) – POHODA nic nezakládá, jen odpoví souborem s fakturami. c) Odpověď vyberte v B2 a Načíst faktury z XML – faktury se zapíšou na POHODA_FAKTURY a POHODA_POLOZKY. d) Kontrola s aplikací spáruje faktury podle čísla a doplní u faktur a DL POHODA číslo a datum (Stav = V POHODĚ), úhrady a výsledek (OK / ROZDÍL / NENÍ V POHODĚ / JEN V POHODĚ).</div></td>
+</tr>
+<tr style="height:140px"><th class="rh">22</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Přehledy</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Listy PREHLED_DL a PREHLED_FAKTURY: grafy a kontingenční tabulky – DL a faktury po měsících a po dnech podle stavu, množství a částky po dnech, zákazníci, receptury, výkony, kontrola DL, odběratelé, položky podle typu, kontrola s POHODOU (výsledek, po měsících, seznam faktur s rozdílem – sloupec Výsledek POHODA na listu FAKTURY: OK / ROZDÍL / NENÍ V POHODĚ / nekontrolováno / neexportováno). Průřezy Měsíc / Betonárna / Stav nahoře filtrují grafy i tabulky. Obnoví se při otevření listu (nebo Obnovit přehledy). Stručný souhrn podle stavu je i v 1. řádku listů DODACI_LISTY, FAKTURY a POHODA_FAKTURY (celá tabulka bez ohledu na filtr).</div></td>
+</tr>
+<tr style="height:60px"><th class="rh">23</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Řazení</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Tlačítko Seřadit… (DODACI_LISTY, VYKONY_DL, FAKTURY, POLOZKY, POHODA_FAKTURY) nabídne řazení podle čísla DL / faktury, data, zákazníka, stavu… Řadí se celá tabulka (vyfiltrovaná až po zrušení filtru). Po Načíst DL z CSV se DL a výkony seřadí podle betonárny a čísla DL samy (NASTAVENI: Po načtení seřadit DL).</div></td>
+</tr>
+<tr style="height:40px"><th class="rh">24</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Součty</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Řádek nad záhlavím tabulek (FAKTURY, POLOZKY, DODACI_LISTY, VYKONY_DL, POHODA_*) sčítá jen viditelné řádky podle filtru; vlevo je počet řádků. Součet označených buněk ukazuje Excel ve stavovém řádku.</div></td>
+</tr>
+<tr style="height:21px"><th class="rh">25</th>
+<td class="sp" style="font-weight:700;font-size:16.0px">Listy</td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:40px"><th class="rh">26</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">FAKTURY, POLOZKY</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">faktury a položky; Základ, DPH, Celkem, Položek a Stav jsou vzorce. Položka „Dodací listy“ = čísla DL (v XML jako poznámka položky).</div></td>
+</tr>
+<tr style="height:40px"><th class="rh">27</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">DODACI_LISTY, VYKONY_DL</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">dodací listy z eMixu a jejich zvláštní výkony; Celkem bez DPH = beton po slevě + doprava + výkony (vzorec). Chybí-li v CSV cena betonu (eMix ji zatím neposílá), vezme se smluvní cena nebo ceník receptury.</div></td>
+</tr>
+<tr style="height:40px"><th class="rh">28</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">TYPY_POLOZEK</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">typy položek faktury – doplňte a upravte (text, jednotka, cena, sazba DPH). Zdroj DL – … = položka vzniká z DL; Ruční = zadává se ve formuláři. Označí DL jako fakturovaný = Ano jen u BETON.</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">29</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">POHODA_FAKTURY</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">vydané faktury načtené z POHODY (kontrola, úhrady).</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">30</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">CISELNIKY a další</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">číselníky z eMixu; IMPORTY = protokol načtení; NASTAVENI = IČO, DPH, řada faktur, CSV.</div></td>
+</tr>
+<tr style="height:60px"><th class="rh">31</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Kód maker</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">nastroje/vba/modFakt*.bas, modCsv.bas, modPohoda.bas, frmFaktura.fakt.vba, frmNahled.fakt.vba, frmNahledDL.fakt.vba, modFaktPohoda.bas; sešit vytváří nastroje/fakturace.py (python bobeton.py fakturace).</div></td>
+</tr>
+</table>
+</div></div></main>
+<footer>Vygenerováno z BoBeton_Fakturace.xlsm 29.10.2026 14:44 (nastroje/fakt_html.py).</footer></body></html>

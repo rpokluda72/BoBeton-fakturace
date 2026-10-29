@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAKTURY – BoBeton Fakturace</title><link rel="stylesheet" href="styl.css"></head>
+<body><header><h1><a href="index.html">BoBeton – Fakturace</a></h1></header>
+<nav><a href="index.html" class="" style="border-bottom-color:#1d6f42">Přehled</a><a href="INFO.html" class="" style="border-bottom-color:#1f4e79">INFO</a><a href="PREHLED_DL.html" class="" style="border-bottom-color:#c55a11">PREHLED_DL</a><a href="PREHLED_FAKTURY.html" class="" style="border-bottom-color:#c55a11">PREHLED_FAKTURY</a><a href="DODACI_LISTY.html" class="" style="border-bottom-color:#2f5597">DODACI_LISTY</a><a href="VYKONY_DL.html" class="" style="border-bottom-color:#2f5597">VYKONY_DL</a><a href="FAKTURY.html" class="on" style="border-bottom-color:#548235">FAKTURY</a><a href="POLOZKY.html" class="" style="border-bottom-color:#548235">POLOZKY</a><a href="POHODA_FAKTURY.html" class="" style="border-bottom-color:#1f4e79">POHODA_FAKTURY</a><a href="POHODA_POLOZKY.html" class="" style="border-bottom-color:#1f4e79">POHODA_POLOZKY</a><a href="TYPY_POLOZEK.html" class="" style="border-bottom-color:#bf8f00">TYPY_POLOZEK</a><a href="CISELNIKY.html" class="" style="border-bottom-color:#7f7f7f">CISELNIKY</a><a href="ZAKAZNICI.html" class="" style="border-bottom-color:#a6a6a6">ZAKAZNICI</a><a href="STAVBY.html" class="" style="border-bottom-color:#a6a6a6">STAVBY</a><a href="SMLOUVY.html" class="" style="border-bottom-color:#a6a6a6">SMLOUVY</a><a href="SMLOUVY_BETONY.html" class="" style="border-bottom-color:#a6a6a6">SMLOUVY_BETONY</a><a href="RECEPTURY.html" class="" style="border-bottom-color:#a6a6a6">RECEPTURY</a><a href="AUTA.html" class="" style="border-bottom-color:#a6a6a6">AUTA</a><a href="RIDICI.html" class="" style="border-bottom-color:#a6a6a6">RIDICI</a><a href="CERPADLA.html" class="" style="border-bottom-color:#a6a6a6">CERPADLA</a><a href="VYKONY.html" class="" style="border-bottom-color:#a6a6a6">VYKONY</a><a href="ZONY.html" class="" style="border-bottom-color:#a6a6a6">ZONY</a><a href="IMPORTY.html" class="" style="border-bottom-color:#7f7f7f">IMPORTY</a><a href="NASTAVENI.html" class="" style="border-bottom-color:#000000">NASTAVENI</a><a href="formulare.html" class="" style="border-bottom-color:#7a7a7a">Formuláře</a></nav>
+<main><h2>FAKTURY</h2>
+<p class="pozn">Faktury – vytváření, náhled, export XML do POHODY. Tabulka tblFaktury: 31 řádků, 29 sloupců; ukázáno záhlaví listu a prvních 12 řádků.</p>
+<div class="okno"><div class="list"><table class="xl mrizka" style="width:3119px">
+<colgroup><col style="width:34px"><col style="width:98px"><col style="width:77px"><col style="width:77px"><col style="width:77px"><col style="width:77px"><col style="width:196px"><col style="width:70px"><col style="width:84px"><col style="width:140px"><col style="width:126px"><col style="width:49px"><col style="width:70px"><col style="width:294px"><col style="width:91px"><col style="width:84px"><col style="width:91px"><col style="width:56px"><col style="width:84px"><col style="width:105px"><col style="width:154px"><col style="width:84px"><col style="width:77px"><col style="width:84px"><col style="width:84px"><col style="width:182px"><col style="width:126px"><col style="width:168px"><col style="width:63px"><col style="width:117px"></colgroup>
+<tr style="height:20px"><th class="rh"></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th><th>AA</th><th>AB</th><th>AC</th></tr>
+<tr style="height:32px"><th class="rh">1</th>
+<td class="sp" style="font-weight:700;color:#1f4e79;font-size:18.7px">Faktury</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td class="sp" style="font-weight:700;color:#1f3864;font-size:13.3px;vertical-align:middle">Faktur 31     Rozpracované 15     Exportováno 1     V POHODĚ 15     celkem s DPH 3 916 790 Kč     neuhrazeno 15 (2 259 850 Kč)     ROZDÍL s POHODOU 4     NENÍ V POHODĚ 1</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:32px"><th class="rh">2</th>
+<td style="font-weight:700;color:#1f4e79;font-size:13.3px"><div class="o">Složka XML:</div></td>
+<td colspan="4" title="Složka pro XML soubory faktur pro POHODU (relativní cesta = vůči složce sešitu). Název souboru se tvoří sám: Faktury_RRRR-MM-DD.xml, další soubor téhož dne _2, _3…" class="km" style="background:#fff2cc;font-weight:700;font-size:13.3px"><div class="o">xml</div></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td class="sp" style="color:#404040;font-size:12.0px;vertical-align:middle">› Vytvořit XML, Zrušit export a Náhled berou OZNAČENÉ řádky (výběr víc buněk), jinak VIDITELNÉ řádky podle filtru v záhlaví.</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:32px"><th class="rh">3</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td class="sp" style="color:#404040;font-size:12.0px;vertical-align:middle">› Soubor XML: Faktury_RRRR-MM-DD.xml (dnešní datum), další téhož dne _2, _3… Dvojklik na číslo faktury = úprava. Ctrl+Shift+F nová, Ctrl+Shift+N náhled.</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">4</th>
+<td class="sp" style="font-style:italic;color:#7f7f7f;font-size:12.0px">Podrobný postup je na listu INFO.</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">5</th>
+<td title="Součtový řádek: součty a počet jen VIDITELNÝCH řádků tabulky (podle filtru v záhlaví). Součet označených buněk ukazuje Excel ve stavovém řádku dole." class="km sp" style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7">Σ 31 řádků</td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">3 237 016,70</div></td>
+<td style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">679 773,50</div></td>
+<td style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">3 916 790,20</div></td>
+<td class="sp" style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right">113</td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">2 601,00</div></td>
+<td class="sp" style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right">2 259 850,00</td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+</tr>
+<tr style="height:40px"><th class="rh">6</th>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;vertical-align:middle"><div class="o">Číslo faktury</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Datum vystavení</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">DUZP</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Splatnost</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Kód zákazníka</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Odběratel</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">IČO</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">DIČ</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Ulice</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Obec</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">PSČ</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Forma úhrady</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Text faktury</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Základ</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">DPH</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Celkem s DPH</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Položek</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Stav</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Exportováno</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Soubor XML</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">POHODA číslo</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">POHODA datum</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Uhrazeno Kč</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Zbývá uhradit</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Kontrola POHODA</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Vytvořil</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Poznámka</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Měsíc</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Výsledek POHODA</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">7</th>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260001</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">5.9.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">28.11.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">26634406</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Hala Paskov development s.r.o.</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">26634406</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ26634406</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Na Příkopě 859/22</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Praha 1 - Nové Město</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">11000</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM25-0009 – 2 stavby</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">323 493,40</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">67 933,61</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">391 427,01</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">6</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260001</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">391 427,00</div></td>
+<td style="background:#c6efce;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">8</th>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260002</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">8.9.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">19.11.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">27973093</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Pozemní stavby Ostravice a.s. – účtárna</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">27973093</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ27973093</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Vítkovická 3083/1</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Ostrava - Moravská Ostrava</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">70200</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM25-0002 – Klimkovice, Lesní 540 – Čistírna odpadních vod</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">78 582,30</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">16 502,28</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">95 084,58</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">6</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260002</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">95 375,00</div></td>
+<td style="background:#ffe699;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ROZDÍL: základ 78 582,30 / 78 822,31; celkem s dph 95 084,58 / 95 375,00; položky: 1 rozdílů</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ROZDÍL</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">9</th>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260003</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">7.9.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">28.11.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">40599728</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">PODLAHY PERFEKT s.r.o.</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">40599728</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ40599728</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Opavská 1032/12</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Ostrava - Poruba</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">70800</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM26-0006 – Řepiště, Průmyslová 262 – Hala – podlaha</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">96 847,20</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20 337,91</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">117 185,11</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260003</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">117 790,00</div></td>
+<td style="background:#ffe699;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ROZDÍL: základ 96 847,20 / 97 347,11; celkem s dph 117 185,11 / 117 790,00; položky: 1 rozdílů</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ROZDÍL</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">10</th>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260004</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">1.9.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">28.11.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">40599728</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">PODLAHY PERFEKT s.r.o.</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">40599728</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ40599728</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Opavská 1032/12</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Ostrava - Poruba</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">70800</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM26-0007 – Palkovice, Zahradní 642 – Skladový areál</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">8 409,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 765,89</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">10 174,89</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260004</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">12 962,00</div></td>
+<td style="background:#ffe699;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ROZDÍL: základ 8 409,00 / 10 712,40; celkem s dph 10 174,89 / 12 962,00; položky: 1 rozdílů</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ROZDÍL</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">11</th>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260005</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">7.9.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">28.11.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">40599728</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">PODLAHY PERFEKT s.r.o.</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">40599728</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ40599728</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Opavská 1032/12</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Ostrava - Poruba</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">70800</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM26-0008 – Vlastní odvoz</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">4 300,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">903,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">5 203,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260005</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2 601,00</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2 602,00</div></td>
+<td style="background:#ffe699;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ROZDÍL: DUZP 7.9.2026 / 8.9.2026</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ROZDÍL</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">12</th>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260006</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">3.9.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">12.11.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">43695795</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">TERASY a dlažby Šenov s.r.o.</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">43695795</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ43695795</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Radniční náměstí 300</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Šenov</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">73934</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM26-0011 – Metylovice, K Rybníku 193 – Hala – podlaha</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">24 121,60</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">5 065,54</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">29 187,14</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Exportováno</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">Faktury_2026-10-29.xml</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#f8cbad;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">NENÍ V POHODĚ</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">NENÍ V POHODĚ</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">13</th>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260007</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">4.9.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">12.11.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">43695795</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">TERASY a dlažby Šenov s.r.o.</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">43695795</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ43695795</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Radniční náměstí 300</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Šenov</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">73934</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM26-0012 – Sviadnov, Nová 6 – Chodník a obruby</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">76 266,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">16 015,86</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">92 281,86</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260007</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">92 282,00</div></td>
+<td style="background:#c6efce;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">14</th>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260008</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">8.9.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">12.11.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">46978801</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Obec Lhotka u Ostravice</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">46978801</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ46978801</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Lhotka 25</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Lhotka u Ostravice</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">73947</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM25-0007 – 2 stavby</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">138 043,80</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">28 989,20</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">167 033,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">6</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260008</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">167 033,00</div></td>
+<td style="background:#c6efce;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">15</th>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260009</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">7.9.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">28.11.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">67784861</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Silnice a mosty Slezsko a.s.</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">67784861</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ67784861</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Plzeňská 1980/14</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Ostrava - Hrabůvka</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">70030</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM25-0008 – 2 stavby</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">373 496,40</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">78 434,24</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">451 930,64</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">7</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260009</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">451 931,00</div></td>
+<td style="background:#c6efce;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">16</th>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260010</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">3.9.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">28.11.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">68151888</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">RD Horizont s.r.o.</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">68151888</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ68151888</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dlouhá třída 1120/56</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Havířov - Podlesí</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">73601</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM26-0001 – Řepiště, Okružní 854 – Terasa</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">74 710,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">15 689,10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">90 399,10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">4</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260010</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">90 399,00</div></td>
+<td style="background:#c6efce;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">17</th>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260011</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">5.9.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">19.11.2026</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">69331901</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Studénka Industry Park s.r.o.</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">69331901</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ69331901</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Butovická 600</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Studénka</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">74213</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – smlouva SM25-0012 – Brušperk, Školní 30 – Terasa</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">72 600,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">15 246,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">87 846,00</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">6</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260011</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">87 846,00</div></td>
+<td style="background:#c6efce;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+<td class="sp" style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">18</th>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;text-align:right"><div class="o">20260012</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2.9.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">12.11.2026</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">87267144</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">DOMY Vratimov s.r.o.</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">87267144</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CZ87267144</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Frýdecká 811/40</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Vratimov</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">73932</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Příkazem</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Dodávka betonu 09/2026 – Ostrava, Zahradní 536 – Chodník a obruby</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">79 855,20</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">16 769,59</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">96 624,79</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">4</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026 11:25</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Faktury_2026-10-29.xml</div></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260012</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">29.10.2026</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">96 625,00</div></td>
+<td style="background:#c6efce;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+<td class="sp" style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7">roman 29.10.2026 11:23</td>
+<td style="font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
+</tr>
+</table>
+<div style="position:absolute;left:34px;top:20px"><div class="tl" style="left:408px;top:33px;width:191px;height:29px" title="makro ProchazetXML">Procházet…</div><div class="tl" style="left:604px;top:33px;width:149px;height:29px" title="makro VytvoritXML">Vytvořit XML</div><div class="tl" style="left:758px;top:33px;width:261px;height:29px" title="makro ZrusitExport">Zrušit export…</div><div class="tl" style="left:2px;top:65px;width:170px;height:29px" title="makro NovaFaktura">Nová faktura</div><div class="tl" style="left:177px;top:65px;width:149px;height:29px" title="makro UpravitFakturu">Upravit fakturu</div><div class="tl" style="left:331px;top:65px;width:268px;height:29px" title="makro NahledFaktur">Náhled faktur</div><div class="tl" style="left:604px;top:65px;width:149px;height:29px" title="makro HromadnaFakturace">Hromadně z DL…</div><div class="tl" style="left:758px;top:65px;width:261px;height:29px" title="makro Seradit">Seřadit…</div></div>
+</div></div></main>
+<footer>Vygenerováno z BoBeton_Fakturace.xlsm 29.10.2026 14:44 (nastroje/fakt_html.py).</footer></body></html>

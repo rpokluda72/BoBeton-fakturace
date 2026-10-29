@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PREHLED_FAKTURY – BoBeton Fakturace</title><link rel="stylesheet" href="styl.css"></head>
+<body><header><h1><a href="index.html">BoBeton – Fakturace</a></h1></header>
+<nav><a href="index.html" class="" style="border-bottom-color:#1d6f42">Přehled</a><a href="INFO.html" class="" style="border-bottom-color:#1f4e79">INFO</a><a href="PREHLED_DL.html" class="" style="border-bottom-color:#c55a11">PREHLED_DL</a><a href="PREHLED_FAKTURY.html" class="on" style="border-bottom-color:#c55a11">PREHLED_FAKTURY</a><a href="DODACI_LISTY.html" class="" style="border-bottom-color:#2f5597">DODACI_LISTY</a><a href="VYKONY_DL.html" class="" style="border-bottom-color:#2f5597">VYKONY_DL</a><a href="FAKTURY.html" class="" style="border-bottom-color:#548235">FAKTURY</a><a href="POLOZKY.html" class="" style="border-bottom-color:#548235">POLOZKY</a><a href="POHODA_FAKTURY.html" class="" style="border-bottom-color:#1f4e79">POHODA_FAKTURY</a><a href="POHODA_POLOZKY.html" class="" style="border-bottom-color:#1f4e79">POHODA_POLOZKY</a><a href="TYPY_POLOZEK.html" class="" style="border-bottom-color:#bf8f00">TYPY_POLOZEK</a><a href="CISELNIKY.html" class="" style="border-bottom-color:#7f7f7f">CISELNIKY</a><a href="ZAKAZNICI.html" class="" style="border-bottom-color:#a6a6a6">ZAKAZNICI</a><a href="STAVBY.html" class="" style="border-bottom-color:#a6a6a6">STAVBY</a><a href="SMLOUVY.html" class="" style="border-bottom-color:#a6a6a6">SMLOUVY</a><a href="SMLOUVY_BETONY.html" class="" style="border-bottom-color:#a6a6a6">SMLOUVY_BETONY</a><a href="RECEPTURY.html" class="" style="border-bottom-color:#a6a6a6">RECEPTURY</a><a href="AUTA.html" class="" style="border-bottom-color:#a6a6a6">AUTA</a><a href="RIDICI.html" class="" style="border-bottom-color:#a6a6a6">RIDICI</a><a href="CERPADLA.html" class="" style="border-bottom-color:#a6a6a6">CERPADLA</a><a href="VYKONY.html" class="" style="border-bottom-color:#a6a6a6">VYKONY</a><a href="ZONY.html" class="" style="border-bottom-color:#a6a6a6">ZONY</a><a href="IMPORTY.html" class="" style="border-bottom-color:#7f7f7f">IMPORTY</a><a href="NASTAVENI.html" class="" style="border-bottom-color:#000000">NASTAVENI</a><a href="formulare.html" class="" style="border-bottom-color:#7a7a7a">Formuláře</a></nav>
+<main><h2>PREHLED_FAKTURY</h2>
+<p class="pozn">Přehled faktur včetně kontroly s POHODOU: průřezy, grafy a kontingenční tabulky. Horní část listu (sloupce A–M, řádky 1–69) a pod ní všech 7 kontingenčních tabulek.</p>
+<div class="okno"><div class="list"><table class="xl" style="width:1359px">
+<colgroup><col style="width:34px"><col style="width:96px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:96px"><col style="width:103px"><col style="width:103px"><col style="width:103px"></colgroup>
+<tr style="height:20px"><th class="rh"></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th></tr>
+<tr style="height:32px"><th class="rh">1</th>
+<td class="sp" style="font-weight:700;color:#1f4e79;font-size:18.7px">Přehled faktur</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">2</th>
+<td class="sp" style="font-style:italic;color:#7f7f7f;font-size:12.0px">Průřezy Měsíc (vystavení) a Stav filtrují grafy i tabulky faktur (položky podle typu jsou za všechny faktury). Tabulky se obnoví při otevření listu nebo tlačítkem Obnovit přehledy.</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:32px"><th class="rh">3</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">4</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">5</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">6</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">7</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">8</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">9</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">10</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">11</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">12</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">13</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">14</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">15</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">16</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">17</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">18</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">19</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">20</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">21</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">22</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">23</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">24</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">25</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">26</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">27</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">28</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">29</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">30</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">31</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">32</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">33</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">34</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">35</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">36</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">37</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">38</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">39</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">40</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">41</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">42</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">43</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">44</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">45</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">46</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">47</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">48</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">49</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">50</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">51</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">52</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">53</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">54</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">55</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">56</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">57</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">58</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">59</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">60</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">61</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">62</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">63</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">64</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">65</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">66</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">67</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">68</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">69</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+</table>
+<div style="position:absolute;left:34px;top:20px"><div class="tl" style="left:2px;top:53px;width:194px;height:29px" title="makro ObnovitPrehledy">Obnovit přehledy</div><div class="graf" style="left:5px;top:253px;width:627px;height:360px"><img src="img/PREHLED_FAKTURY_Chart_1.png" alt="Faktury po měsících podle stavu (Kč s DPH)"></div><div class="graf" style="left:651px;top:253px;width:627px;height:360px"><img src="img/PREHLED_FAKTURY_Chart_2.png" alt="Faktury podle stavu (počet)"></div><div class="graf" style="left:5px;top:632px;width:627px;height:360px"><img src="img/PREHLED_FAKTURY_Chart_3.png" alt="Top 10 odběratelů (Kč s DPH)"></div><div class="graf" style="left:651px;top:632px;width:627px;height:360px"><img src="img/PREHLED_FAKTURY_Chart_4.png" alt="Tržby podle typu položky (Kč bez DPH)"></div><div class="graf" style="left:5px;top:1011px;width:627px;height:360px"><img src="img/PREHLED_FAKTURY_Chart_5.png" alt="Kontrola s POHODOU – výsledek (počet faktur)"></div><div class="graf" style="left:651px;top:1011px;width:627px;height:360px"><img src="img/PREHLED_FAKTURY_Chart_6.png" alt="Kontrola s POHODOU po měsících (počet faktur)"></div><div class="pr" style="left:5px;top:104px;width:627px;height:133px"><b>Měsíc vystavení</b><div class="it" style="grid-template-columns:repeat(6,1fr)"><span class="">2026-10</span></div></div><div class="pr" style="left:651px;top:104px;width:333px;height:133px"><b>Stav</b><div class="it" style="grid-template-columns:repeat(3,1fr)"><span class="">Exportováno</span><span class="">Rozpracovaná</span><span class="">V POHODĚ</span></div></div></div>
+</div></div>
+<h3>Kontingenční tabulky</h3><div class="kts">
+<div class="okno"><h4>Faktury po měsících podle stavu</h4><div class="list"><table class="xl" style="width:508px">
+<colgroup><col style="width:96px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:103px"></colgroup>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px"><div class="o">Počet faktur</div></td>
+<td class="sp" style="background:#dce6f1;font-weight:700;font-size:14.7px">Stav</td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px"></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px"></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px"></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Měsíc</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Exportováno</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Rozpracovaná</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Celkový součet</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">15</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">15</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">31</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">Celkový součet</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">1</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">15</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">15</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">31</div></td>
+</tr>
+</table>
+</div></div>
+<div class="okno"><h4>Faktury po měsících: částky</h4><div class="list"><table class="xl" style="width:508px">
+<colgroup><col style="width:96px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:103px"></colgroup>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Měsíc</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Počet faktur</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Základ </div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Celkem s DPH </div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Zbývá uhradit </div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-10</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">31</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">3 237 017</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">3 916 790</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2 259 850</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">Celkový součet</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">31</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">3 237 017</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">3 916 790</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">2 259 850</div></td>
+</tr>
+</table>
+</div></div>
+<div class="okno"><h4>Faktury po dnech vystavení</h4><div class="list"><table class="xl" style="width:508px">
+<colgroup><col style="width:96px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:103px"></colgroup>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px"><div class="o">Počet faktur</div></td>
+<td class="sp" style="background:#dce6f1;font-weight:700;font-size:14.7px">Stav</td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px"></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px"></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px"></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Datum vystavení</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Exportováno</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Rozpracovaná</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">V POHODĚ</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Celkový součet</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">29.10.2026</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">15</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">15</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">31</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">Celkový součet</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">1</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">15</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">15</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">31</div></td>
+</tr>
+</table>
+</div></div>
+<div class="okno"><h4>Odběratelé</h4><div class="list"><table class="xl" style="width:627px">
+<colgroup><col style="width:215px"><col style="width:103px"><col style="width:103px"><col style="width:103px"><col style="width:103px"></colgroup>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Odběratel</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Počet faktur</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Základ </div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Celkem s DPH </div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Zbývá uhradit </div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">Silnice a mosty Slezsko a.s.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">2</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">497 808</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">602 348</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">451 931</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">Zelený dům Morava s.r.o.</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">2</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">357 659</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">432 767</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">167 181</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">Hala Paskov development s.r.o.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">1</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">323 493</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">391 427</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">391 427</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">Obec Lhotka u Ostravice</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">2</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">303 885</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">367 701</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">167 033</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">Jaromír Šindel – zednictví</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">1</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">229 541</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">277 745</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">277 745</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">Město Brušperk</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">1</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">186 900</div></td>
+<td class="sp" style="font-size:14.7px;text-align:right">226 149</td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">BETA Komunální služby, příspěvková organizace</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">2</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">184 658</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">223 436</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">71 293</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">Pozemní stavby Ostravice a.s. – účtárna</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">2</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">178 826</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">216 380</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">95 375</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">RD Horizont s.r.o.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">3</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">129 290</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">156 441</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">90 399</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">Petr Kubíček – stavební práce</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">2</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">127 161</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">153 865</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">137 359</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">TERASY a dlažby Šenov s.r.o.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">3</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">116 229</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">140 637</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">92 282</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">PODLAHY PERFEKT s.r.o.</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">4</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">114 216</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">138 202</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">133 354</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">TECHSTAV Moravia spol. s r.o.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">1</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">110 548</div></td>
+<td class="sp" style="background:#d9d9d9;font-size:14.7px;text-align:right">133 764</td>
+<td style="background:#d9d9d9;font-size:14.7px"></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">STAVMONT Beskydy s.r.o.</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">1</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">88 772</div></td>
+<td class="sp" style="font-size:14.7px;text-align:right">107 414</td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">DOMY Vratimov s.r.o.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">1</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">79 855</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">96 625</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">96 625</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">AGRO Sviadnov družstvo</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">1</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">77 095</div></td>
+<td class="sp" style="font-size:14.7px;text-align:right">93 285</td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">Studénka Industry Park s.r.o.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">1</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">72 600</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">87 846</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">87 846</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">VODOSTAVBY Odra a.s.</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">1</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">58 479</div></td>
+<td class="sp" style="font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right">70 760</td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">Celkový součet</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">31</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">3 237 017</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">3 916 790</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">2 259 850</div></td>
+</tr>
+</table>
+</div></div>
+<div class="okno"><h4>Kontrola s POHODOU – výsledek</h4><div class="list"><table class="xl" style="width:323px">
+<colgroup><col style="width:117px"><col style="width:103px"><col style="width:103px"></colgroup>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Výsledek POHODA</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Počet faktur</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Celkem s DPH </div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">neexportováno</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">15</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 628 835</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">NENÍ V POHODĚ</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">1</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">29 187</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">OK</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">11</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">2 031 121</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">ROZDÍL</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">4</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">227 648</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">Celkový součet</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">31</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">3 916 790</div></td>
+</tr>
+</table>
+</div></div>
+<div class="okno"><h4>Faktury s rozdílem nebo mimo POHODU (sloupec Kontrola POHODA)</h4><div class="list"><table class="xl" style="width:1026px">
+<colgroup><col style="width:117px"><col style="width:96px"><col style="width:215px"><col style="width:495px"><col style="width:103px"></colgroup>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Výsledek POHODA</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Číslo faktury</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Odběratel</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Kontrola POHODA</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Celkem s DPH </div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">NENÍ V POHODĚ</div></td>
+<td style="background:#d9d9d9;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">20260006</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">TERASY a dlažby Šenov s.r.o.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">NENÍ V POHODĚ</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">29 187</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">ROZDÍL</div></td>
+<td style="font-weight:700;font-size:14.7px;text-align:right"><div class="o">20260002</div></td>
+<td style="font-size:14.7px"><div class="o">Pozemní stavby Ostravice a.s. – účtárna</div></td>
+<td style="font-size:14.7px"><div class="o">ROZDÍL: základ 78 582,30 / 78 822,31; celkem s dph 95 084,58 / 95 375,00; položky: 1 rozdílů</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">95 085</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-weight:700;font-size:14.7px"><div class="o">ROZDÍL</div></td>
+<td style="background:#d9d9d9;font-weight:700;font-size:14.7px;text-align:right"><div class="o">20260003</div></td>
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">PODLAHY PERFEKT s.r.o.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">ROZDÍL: základ 96 847,20 / 97 347,11; celkem s dph 117 185,11 / 117 790,00; položky: 1 rozdílů</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">117 185</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-weight:700;font-size:14.7px"><div class="o">ROZDÍL</div></td>
+<td style="font-weight:700;font-size:14.7px;text-align:right"><div class="o">20260004</div></td>
+<td style="font-size:14.7px"><div class="o">PODLAHY PERFEKT s.r.o.</div></td>
+<td style="font-size:14.7px"><div class="o">ROZDÍL: základ 8 409,00 / 10 712,40; celkem s dph 10 174,89 / 12 962,00; položky: 1 rozdílů</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">10 175</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">ROZDÍL</div></td>
+<td style="background:#d9d9d9;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">20260005</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">PODLAHY PERFEKT s.r.o.</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">ROZDÍL: DUZP 7.9.2026 / 8.9.2026</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">5 203</div></td>
+</tr>
+<tr style="height:20px">
+<td class="sp" style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7">Celkový součet</td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">256 835</div></td>
+</tr>
+</table>
+</div></div>
+<div class="okno"><h4>Položky faktur podle typu (všechny faktury)</h4><div class="list"><table class="xl" style="width:302px">
+<colgroup><col style="width:96px"><col style="width:103px"><col style="width:103px"></colgroup>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Typ položky</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Množství </div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">Kč bez DPH</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">BETON</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 049,5</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">2 660 637</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">DOPRAVA</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">1 106,0</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">477 820</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">CERP_HOD</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">27,0</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">48 600</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">VLAKNA</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">98,0</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">17 640</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px"><div class="o">CERP_PRIST</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">11,0</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;text-align:right"><div class="o">16 500</div></td>
+</tr>
+<tr style="height:20px">
+<td style="font-size:14.7px"><div class="o">SOBOTA</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">111,0</div></td>
+<td style="font-size:14.7px;text-align:right"><div class="o">13 320</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7"><div class="o">CEKANI</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">10,0</div></td>
+<td style="background:#d9d9d9;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right"><div class="o">2 500</div></td>
+</tr>
+<tr style="height:20px">
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7"><div class="o">Celkový součet</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">2 412,5</div></td>
+<td style="background:#dce6f1;font-weight:700;font-size:14.7px;border-top:1px solid #95b3d7;text-align:right"><div class="o">3 237 017</div></td>
+</tr>
+</table>
+</div></div>
+</div></main>
+<footer>Vygenerováno z BoBeton_Fakturace.xlsm 29.10.2026 14:44 (nastroje/fakt_html.py).</footer></body></html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VYKONY_DL – BoBeton Fakturace</title><link rel="stylesheet" href="styl.css"></head>
+<body><header><h1><a href="index.html">BoBeton – Fakturace</a></h1></header>
+<nav><a href="index.html" class="" style="border-bottom-color:#1d6f42">Přehled</a><a href="INFO.html" class="" style="border-bottom-color:#1f4e79">INFO</a><a href="PREHLED_DL.html" class="" style="border-bottom-color:#c55a11">PREHLED_DL</a><a href="PREHLED_FAKTURY.html" class="" style="border-bottom-color:#c55a11">PREHLED_FAKTURY</a><a href="DODACI_LISTY.html" class="" style="border-bottom-color:#2f5597">DODACI_LISTY</a><a href="VYKONY_DL.html" class="on" style="border-bottom-color:#2f5597">VYKONY_DL</a><a href="FAKTURY.html" class="" style="border-bottom-color:#548235">FAKTURY</a><a href="POLOZKY.html" class="" style="border-bottom-color:#548235">POLOZKY</a><a href="POHODA_FAKTURY.html" class="" style="border-bottom-color:#1f4e79">POHODA_FAKTURY</a><a href="POHODA_POLOZKY.html" class="" style="border-bottom-color:#1f4e79">POHODA_POLOZKY</a><a href="TYPY_POLOZEK.html" class="" style="border-bottom-color:#bf8f00">TYPY_POLOZEK</a><a href="CISELNIKY.html" class="" style="border-bottom-color:#7f7f7f">CISELNIKY</a><a href="ZAKAZNICI.html" class="" style="border-bottom-color:#a6a6a6">ZAKAZNICI</a><a href="STAVBY.html" class="" style="border-bottom-color:#a6a6a6">STAVBY</a><a href="SMLOUVY.html" class="" style="border-bottom-color:#a6a6a6">SMLOUVY</a><a href="SMLOUVY_BETONY.html" class="" style="border-bottom-color:#a6a6a6">SMLOUVY_BETONY</a><a href="RECEPTURY.html" class="" style="border-bottom-color:#a6a6a6">RECEPTURY</a><a href="AUTA.html" class="" style="border-bottom-color:#a6a6a6">AUTA</a><a href="RIDICI.html" class="" style="border-bottom-color:#a6a6a6">RIDICI</a><a href="CERPADLA.html" class="" style="border-bottom-color:#a6a6a6">CERPADLA</a><a href="VYKONY.html" class="" style="border-bottom-color:#a6a6a6">VYKONY</a><a href="ZONY.html" class="" style="border-bottom-color:#a6a6a6">ZONY</a><a href="IMPORTY.html" class="" style="border-bottom-color:#7f7f7f">IMPORTY</a><a href="NASTAVENI.html" class="" style="border-bottom-color:#000000">NASTAVENI</a><a href="formulare.html" class="" style="border-bottom-color:#7a7a7a">Formuláře</a></nav>
+<main><h2>VYKONY_DL</h2>
+<p class="pozn">Výkony (čerpadla, doprava, …) k dodacím listům. Tabulka tblVykonyDL: 118 řádků, 8 sloupců; ukázáno záhlaví listu a prvních 12 řádků.</p>
+<div class="okno"><div class="list"><table class="xl mrizka" style="width:1003px">
+<colgroup><col style="width:34px"><col style="width:63px"><col style="width:70px"><col style="width:84px"><col style="width:280px"><col style="width:63px"><col style="width:56px"><col style="width:77px"><col style="width:84px"><col style="width:64px"><col style="width:64px"><col style="width:64px"></colgroup>
+<tr style="height:20px"><th class="rh"></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th></tr>
+<tr style="height:32px"><th class="rh">1</th>
+<td class="sp" style="font-weight:700;color:#1f4e79;font-size:18.7px">Zvláštní výkony dodacích listů</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:32px"><th class="rh">2</th>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="color:#404040;font-size:12.0px;vertical-align:middle"><div class="o">› Dvojklik na Číslo DL = náhled DL. Změny výkonů nejlépe v náhledu (Upravit DL); Celkem Kč je vzorec.</div></td>
+</tr>
+<tr style="height:20px"><th class="rh">3</th>
+<td class="sp" style="font-style:italic;color:#7f7f7f;font-size:12.0px">Z CSV eMixu (CISLOVYKONU1–5): čerpadlo, příplatky. Kód výkonu podle číselníku VYKONY.</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">4</th>
+<td title="Součtový řádek: součty a počet jen VIDITELNÝCH řádků tabulky (podle filtru v záhlaví). Součet označených buněk ukazuje Excel ve stavovém řádku dole." class="km sp" style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7">Σ 118 řádků</td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td class="sp" style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right">442,00</td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7"></td>
+<td class="sp" style="background:#fff2cc;font-weight:700;color:#1f3a5e;font-size:14.7px;border-bottom:1px solid #95b3d7;text-align:right">223 870,00</td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:40px"><th class="rh">5</th>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7;vertical-align:middle"><div class="o">Betonárna</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Číslo DL</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Kód výkonu</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Výkon</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Počet</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Jednotka</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Cena Kč</div></td>
+<td class="wr" style="background:#4f81bd;font-weight:700;color:#ffffff;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;vertical-align:middle"><div class="o">Celkem Kč</div></td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">6</th>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100001</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">VLAKNA</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Rozptýlená vlákna do betonu</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">10,00</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">m3</div></td>
+<td style="background:#dce6f1;font-size:13.3px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">180,00</div></td>
+<td class="sp" style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">1 800,00</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">7</th>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100002</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">VLAKNA</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Rozptýlená vlákna do betonu</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">9,00</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">m3</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">180,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">1620</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">8</th>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100004</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">VLAKNA</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Rozptýlená vlákna do betonu</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">9,00</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">m3</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">180,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">1620</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">9</th>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100005</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">VLAKNA</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Rozptýlená vlákna do betonu</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">10,00</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">m3</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">180,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">1800</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">10</th>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100006</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">VLAKNA</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Rozptýlená vlákna do betonu</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2,00</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">m3</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">180,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">360</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">11</th>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100008</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CERP_PRIST</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Přistavení autočerpadla</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1,00</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ks</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 500,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">1500</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">12</th>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100011</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CERP_HOD</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Čerpání betonu</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">3,00</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">hod</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 800,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">5400</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">13</th>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100017</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CERP_PRIST</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Přistavení autočerpadla</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1,00</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ks</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 500,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">1500</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">14</th>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100018</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CERP_PRIST</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Přistavení autočerpadla</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1,00</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ks</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 500,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">1500</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">15</th>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100021</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CERP_HOD</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Čerpání betonu</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2,00</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">hod</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 800,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">3600</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">16</th>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100022</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CERP_HOD</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Čerpání betonu</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">2,00</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">hod</div></td>
+<td style="background:#dce6f1;font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 800,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">3600</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+<tr style="height:20px"><th class="rh">17</th>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;border-left:1px solid #95b3d7"><div class="o">MUG</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">100023</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">CERP_PRIST</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">Přistavení autočerpadla</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1,00</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">ks</div></td>
+<td style="font-size:14.7px;border-bottom:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right"><div class="o">1 500,00</div></td>
+<td class="sp" style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7;text-align:right">1500</td>
+<td style="font-size:14.7px;border-left:1px solid #95b3d7"></td>
+<td style="font-size:14.7px"></td>
+<td style="font-size:14.7px"></td>
+</tr>
+</table>
+<div style="position:absolute;left:34px;top:20px"><div class="tl" style="left:562px;top:33px;width:212px;height:29px" title="makro NahledDL">Náhled / úprava DL</div><div class="tl" style="left:779px;top:33px;width:123px;height:29px" title="makro Seradit">Seřadit…</div></div>
+</div></div></main>
+<footer>Vygenerováno z BoBeton_Fakturace.xlsm 29.10.2026 14:44 (nastroje/fakt_html.py).</footer></body></html>
