@@ -51,11 +51,14 @@
 <tr style="height:29px"><th class="rh">2</th>
 <td style="font-weight:700;color:#1f4e79;font-size:13.3px"><div class="o">Soubor CSV z eMixu:</div></td>
 <td colspan="6" title="Soubor CSV s dodacími listy z eMixu (relativní cesta = vůči složce sešitu)." class="km" style="background:#fff2cc;font-weight:700;font-size:13.3px"><div class="o">..\Martek-eMix\ukazka-kody\MUG\DL_MUG_2026-09-30.CSV</div></td>
+<td title="Procházet…
+Vybere soubor CSV s dodacími listy z eMixu (buňka B2)." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
+<td title="Načíst DL z CSV
+Načte DL ze souboru B2 pro betonárnu B3 a výkony DL na list VYKONY_DL. Nové DL přidá na konec. Už načtené DL podle B4 přeskočí, nebo aktualizuje ty nevyfakturované. Výsledek se zapíše do protokolu IMPORTY." class="km" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle"><div class="o">?</div></td>
+<td title="Seřadit…
+Nabídne možnosti řazení tabulky tohoto listu (např. podle data a čísla). Napište číslo volby." class="km" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle"><div class="o">?</div></td>
 <td class="sp" style="color:#404040;font-size:12.0px;vertical-align:middle">› Načíst DL z CSV přidá nové DL na konec tabulky (duplicita = betonárna + číslo DL). B4: Aktualizovat = nevyfakturovaný DL se přepíše z CSV.</td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
@@ -94,8 +97,10 @@
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
+<td title="Kontrola a stav DL
+Přepočítá u všech DL stav fakturace a číslo faktury podle položek faktur. Do sloupce Kontrola zapíše chyby a upozornění, například DL ve dvou fakturách nebo chybějící cenu." class="km" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle"><div class="o">?</div></td>
+<td title="Faktury z vybraných DL…
+Vytvoří faktury z označených, jinak vyfiltrovaných DL. Použije jen DL ve stavu K fakturaci. Jedna faktura = jeden zákazník a jedna smlouva. Běžný denní postup: vyfiltrovat DL dne a kliknout." class="km" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle"><div class="o">?</div></td>
 <td class="sp" style="color:#404040;font-size:12.0px;vertical-align:middle">› Faktury z vybraných DL, Smazat vybrané DL a Náhled berou OZNAČENÉ řádky (výběr víc buněk), jinak VIDITELNÉ řádky podle filtru.</td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
@@ -132,8 +137,10 @@
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
+<td title="Náhled / úprava DL
+Ukáže vybrané DL s výkony (také Ctrl+Shift+D nebo dvojklik na číslo DL). Údaje jsou jen ke čtení, tlačítko Upravit DL je zpřístupní. Bere označené řádky, jinak vyfiltrované." class="km" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle"><div class="o">?</div></td>
+<td title="Smazat vybrané DL…
+Smaže označené, jinak vyfiltrované DL i jejich výkony. Bez výběru a bez filtru nesmaže nic. Z rozpracovaných faktur se tyto DL odeberou. Je-li DL ve faktuře exportované nebo v POHODĚ, nesmaže se nic." class="km" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle"><div class="o">?</div></td>
 <td class="sp" style="color:#404040;font-size:12.0px;vertical-align:middle">› Náhled / úprava DL (dvojklik na Číslo DL, Ctrl+Shift+D): prohlížení, Upravit DL = ruční změna. Kontrola a stav DL přepočítá Fakturace a Číslo faktury podle faktur.</td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
@@ -722,6 +729,6 @@
 <td style="background:#ededed;font-size:14.7px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">2026-09</div></td>
 </tr>
 </table>
-<div style="position:absolute;left:34px;top:20px"><div class="tl" style="left:520px;top:33px;width:177px;height:26px" title="makro ProchazetCSV">Procházet…</div><div class="tl" style="left:702px;top:33px;width:212px;height:26px" title="makro NacistDL">Načíst DL z CSV</div><div class="tl" style="left:702px;top:62px;width:212px;height:26px" title="makro KontrolaFaktur">Kontrola a stav DL</div><div class="tl" style="left:702px;top:91px;width:212px;height:26px" title="makro NahledDL">Náhled / úprava DL</div><div class="tl" style="left:919px;top:62px;width:205px;height:26px" title="makro FakturyZVybranychDL">Faktury z vybraných DL…</div><div class="tl" style="left:919px;top:91px;width:205px;height:26px" title="makro SmazatDL">Smazat vybrané DL…</div><div class="tl" style="left:919px;top:33px;width:205px;height:26px" title="makro Seradit">Seřadit…</div></div>
+<div style="position:absolute;left:34px;top:20px"><div class="tl" style="left:520px;top:33px;width:158px;height:26px" title="makro ProchazetCSV">Procházet…</div><div class="tl" style="left:702px;top:33px;width:193px;height:26px" title="makro NacistDL">Načíst DL z CSV</div><div class="tl" style="left:702px;top:62px;width:193px;height:26px" title="makro KontrolaFaktur">Kontrola a stav DL</div><div class="tl" style="left:702px;top:91px;width:193px;height:26px" title="makro NahledDL">Náhled / úprava DL</div><div class="tl" style="left:919px;top:62px;width:186px;height:26px" title="makro FakturyZVybranychDL">Faktury z vybraných DL…</div><div class="tl" style="left:919px;top:91px;width:186px;height:26px" title="makro SmazatDL">Smazat vybrané DL…</div><div class="tl" style="left:919px;top:33px;width:186px;height:26px" title="makro Seradit">Seřadit…</div></div>
 </div></div></main>
-<footer>Vygenerováno z BoBeton_Fakturace.xlsm 29.10.2026 14:44 (nastroje/fakt_html.py).</footer></body></html>
+<footer>Vygenerováno z BoBeton_Fakturace.xlsm 30.10.2026 08:45 (nastroje/fakt_html.py).</footer></body></html>

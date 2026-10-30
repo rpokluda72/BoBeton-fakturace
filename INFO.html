@@ -36,9 +36,9 @@
 <td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">3. Faktura</div></td>
 <td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">List FAKTURY: Nová faktura (Ctrl+Shift+F) nebo dvojklik na první prázdný řádek sloupce Číslo faktury. Ve formuláři vyberte zákazníka, zaškrtněte dodací listy a tlačítkem Vložit vybrané DL do položek vzniknou položky (beton podle receptury a ceny, doprava, výkony). Další položky (čerpadlo, potrubí, sleva…) přidáte typem z listu TYPY_POLOZEK. Uložit = řádek na FAKTURY a položky na POLOZKY; DL v položce typu BETON dostanou Fakturováno a číslo faktury.</div></td>
 </tr>
-<tr style="height:80px"><th class="rh">8</th>
+<tr style="height:100px"><th class="rh">8</th>
 <td style="font-weight:700;font-size:14.7px;vertical-align:top"></td>
-<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Úprava: dvojklik na číslo faktury (FAKTURY i POLOZKY) nebo Upravit fakturu. Smazat fakturu (ve formuláři) smaže i položky a DL vrátí do stavu K fakturaci (vymaže u nich Fakturace a Číslo faktury). Exportovanou fakturu nejde smazat – nejdřív Zrušit export; fakturu v POHODĚ nejde smazat vůbec. Řádky faktur nemažte ručně – Kontrola a stav DL takové položky bez faktury ohlásí jako CHYBU.</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Úprava: dvojklik na číslo faktury (FAKTURY i POLOZKY) nebo Upravit fakturu. Smazat fakturu (ve formuláři) nebo Smazat vybrané faktury… (označené nebo vyfiltrované řádky listu FAKTURY) smaže i položky a DL vrátí do stavu K fakturaci (vymaže u nich Fakturace a Číslo faktury). Exportovanou fakturu nejde smazat – nejdřív Zrušit export; fakturu v POHODĚ nejde smazat vůbec. Řádky faktur nemažte ručně – Kontrola a stav DL takové položky bez faktury ohlásí jako CHYBU.</div></td>
 </tr>
 <tr style="height:100px"><th class="rh">9</th>
 <td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Náhled a úprava DL</div></td>
@@ -66,7 +66,7 @@
 </tr>
 <tr style="height:80px"><th class="rh">15</th>
 <td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Výběr faktur</div></td>
-<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Vytvořit XML, Zrušit export a Náhled faktur pracují s fakturami: 1) OZNAČENÝCH řádků – výběr víc buněk v tabulce (tažení myší, Ctrl+klik, klik na čísla řádků vlevo); 2) jinak VIDITELNÝCH řádků podle filtru v záhlaví (Stav, Datum vystavení, Soubor XML…). Jedna označená buňka se za výběr nepovažuje. Jaký výběr se použil, ukáže informační okno před provedením.</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Vytvořit XML, Zrušit export, Náhled faktur a Smazat vybrané faktury pracují s fakturami: 1) OZNAČENÝCH řádků – výběr víc buněk v tabulce (tažení myší, Ctrl+klik, klik na čísla řádků vlevo); 2) jinak VIDITELNÝCH řádků podle filtru v záhlaví (Stav, Datum vystavení, Soubor XML…). Jedna označená buňka se za výběr nepovažuje. Jaký výběr se použil, ukáže informační okno před provedením.</div></td>
 </tr>
 <tr style="height:40px"><th class="rh">16</th>
 <td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">4. Náhled</div></td>
@@ -128,10 +128,14 @@
 <td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">CISELNIKY a další</div></td>
 <td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">číselníky z eMixu; IMPORTY = protokol načtení; NASTAVENI = IČO, DPH, řada faktur, CSV.</div></td>
 </tr>
-<tr style="height:60px"><th class="rh">31</th>
+<tr style="height:40px"><th class="rh">31</th>
+<td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Sloupce tabulek</div></td>
+<td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">Sloupce můžete přidávat a přesouvat. Nemažte je ani nepřejmenovávejte – nepotřebné sloupce skryjte. Makra hledají sloupce podle názvu; chybí-li některý, ohlásí to při otevření sešitu a akce se neprovede.</div></td>
+</tr>
+<tr style="height:60px"><th class="rh">32</th>
 <td style="font-weight:700;font-size:14.7px;vertical-align:top"><div class="o">Kód maker</div></td>
 <td class="wr" style="font-size:14.7px;vertical-align:top"><div class="o">nastroje/vba/modFakt*.bas, modCsv.bas, modPohoda.bas, frmFaktura.fakt.vba, frmNahled.fakt.vba, frmNahledDL.fakt.vba, modFaktPohoda.bas; sešit vytváří nastroje/fakturace.py (python bobeton.py fakturace).</div></td>
 </tr>
 </table>
 </div></div></main>
-<footer>Vygenerováno z BoBeton_Fakturace.xlsm 29.10.2026 14:44 (nastroje/fakt_html.py).</footer></body></html>
+<footer>Vygenerováno z BoBeton_Fakturace.xlsm 30.10.2026 08:45 (nastroje/fakt_html.py).</footer></body></html>

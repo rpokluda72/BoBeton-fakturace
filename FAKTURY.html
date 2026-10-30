@@ -42,13 +42,16 @@
 <tr style="height:32px"><th class="rh">2</th>
 <td style="font-weight:700;color:#1f4e79;font-size:13.3px"><div class="o">Složka XML:</div></td>
 <td colspan="4" title="Složka pro XML soubory faktur pro POHODU (relativní cesta = vůči složce sešitu). Název souboru se tvoří sám: Faktury_RRRR-MM-DD.xml, další soubor téhož dne _2, _3…" class="km" style="background:#fff2cc;font-weight:700;font-size:13.3px"><div class="o">xml</div></td>
+<td title="Procházet…
+Vybere složku, kam se ukládají XML soubory faktur pro POHODU (buňka B2)." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
+<td title="Vytvořit XML
+Exportuje vybrané faktury do XML pro POHODU, ale jen faktury ve stavu Rozpracovaná. Bere označené řádky, jinak vyfiltrované. Soubor Faktury_RRRR-MM-DD.xml se uloží do složky B2, další export téhož dne dostane _2, _3… Faktury pak mají stav Exportováno." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
+<td title="Zrušit export…
+Vrátí vybrané exportované faktury do stavu Rozpracovaná a odebere je ze souboru XML. Původní soubor se zálohuje do xml\zrusene. Faktury už v POHODĚ vrátit nejde. Co už bylo do POHODY importováno, smažte v POHODĚ ručně." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td class="sp" style="color:#404040;font-size:12.0px;vertical-align:middle">› Vytvořit XML, Zrušit export a Náhled berou OZNAČENÉ řádky (výběr víc buněk), jinak VIDITELNÉ řádky podle filtru v záhlaví.</td>
+<td class="sp" style="color:#404040;font-size:12.0px;vertical-align:middle">› Vytvořit XML, Zrušit export, Náhled a Smazat berou OZNAČENÉ řádky (výběr víc buněk), jinak VIDITELNÉ řádky podle filtru v záhlaví.</td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
@@ -69,15 +72,20 @@
 </tr>
 <tr style="height:32px"><th class="rh">3</th>
 <td style="font-size:14.7px"></td>
+<td title="Nová faktura
+Otevře formulář nové faktury (také Ctrl+Shift+F): zákazník, výběr dodacích listů, položky. Po uložení dostanou DL stav Fakturováno." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
+<td title="Upravit fakturu
+Otevře formulář faktury na aktivním řádku (také dvojklik na číslo faktury). Funguje na listech FAKTURY i POLOZKY." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
+<td title="Náhled faktur
+Ukáže vybrané faktury s položkami (také Ctrl+Shift+N), šipkami se listuje. Bere označené řádky, jinak vyfiltrované. Bez výběru a bez filtru se neotevře." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
+<td title="Hromadně z DL…
+Zeptá se na datum a vytvoří faktury ze všech DL K fakturaci do tohoto data. Jedna faktura = jeden zákazník a jedna smlouva. Je to doplňkový nástroj, běžně se fakturuje tlačítkem Faktury z vybraných DL." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
+<td title="Seřadit…
+Nabídne možnosti řazení tabulky tohoto listu (např. podle data a čísla). Napište číslo volby." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
 <td class="sp" style="color:#404040;font-size:12.0px;vertical-align:middle">› Soubor XML: Faktury_RRRR-MM-DD.xml (dnešní datum), další téhož dne _2, _3… Dvojklik na číslo faktury = úprava. Ctrl+Shift+F nová, Ctrl+Shift+N náhled.</td>
 <td style="font-size:14.7px"></td>
@@ -98,7 +106,7 @@
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
 </tr>
-<tr style="height:20px"><th class="rh">4</th>
+<tr style="height:32px"><th class="rh">4</th>
 <td class="sp" style="font-style:italic;color:#7f7f7f;font-size:12.0px">Podrobný postup je na listu INFO.</td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
@@ -108,7 +116,8 @@
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
-<td style="font-size:14.7px"></td>
+<td title="Smazat vybrané faktury…
+Smaže označené, jinak vyfiltrované faktury i jejich položky. Jejich DL se vrátí do stavu K fakturaci. Bez výběru a bez filtru nesmaže nic. Je-li ve výběru faktura exportovaná nebo v POHODĚ, nesmaže se nic." class="km sp" style="font-weight:700;color:#7f7f7f;font-size:13.3px;text-align:right;vertical-align:middle">?</td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
 <td style="font-size:14.7px"></td>
@@ -564,6 +573,6 @@
 <td style="background:#ededed;font-size:13.3px;border-bottom:1px solid #95b3d7;border-right:1px solid #95b3d7;border-top:1px solid #95b3d7"><div class="o">OK</div></td>
 </tr>
 </table>
-<div style="position:absolute;left:34px;top:20px"><div class="tl" style="left:408px;top:33px;width:191px;height:29px" title="makro ProchazetXML">Procházet…</div><div class="tl" style="left:604px;top:33px;width:149px;height:29px" title="makro VytvoritXML">Vytvořit XML</div><div class="tl" style="left:758px;top:33px;width:261px;height:29px" title="makro ZrusitExport">Zrušit export…</div><div class="tl" style="left:2px;top:65px;width:170px;height:29px" title="makro NovaFaktura">Nová faktura</div><div class="tl" style="left:177px;top:65px;width:149px;height:29px" title="makro UpravitFakturu">Upravit fakturu</div><div class="tl" style="left:331px;top:65px;width:268px;height:29px" title="makro NahledFaktur">Náhled faktur</div><div class="tl" style="left:604px;top:65px;width:149px;height:29px" title="makro HromadnaFakturace">Hromadně z DL…</div><div class="tl" style="left:758px;top:65px;width:261px;height:29px" title="makro Seradit">Seřadit…</div></div>
+<div style="position:absolute;left:34px;top:20px"><div class="tl" style="left:408px;top:33px;width:172px;height:29px" title="makro ProchazetXML">Procházet…</div><div class="tl" style="left:604px;top:33px;width:130px;height:29px" title="makro VytvoritXML">Vytvořit XML</div><div class="tl" style="left:758px;top:33px;width:242px;height:29px" title="makro ZrusitExport">Zrušit export…</div><div class="tl" style="left:2px;top:65px;width:151px;height:29px" title="makro NovaFaktura">Nová faktura</div><div class="tl" style="left:177px;top:65px;width:130px;height:29px" title="makro UpravitFakturu">Upravit fakturu</div><div class="tl" style="left:331px;top:65px;width:249px;height:29px" title="makro NahledFaktur">Náhled faktur</div><div class="tl" style="left:604px;top:65px;width:130px;height:29px" title="makro HromadnaFakturace">Hromadně z DL…</div><div class="tl" style="left:758px;top:65px;width:242px;height:29px" title="makro Seradit">Seřadit…</div><div class="tl" style="left:758px;top:97px;width:242px;height:29px" title="makro SmazatFaktury">Smazat vybrané faktury…</div></div>
 </div></div></main>
-<footer>Vygenerováno z BoBeton_Fakturace.xlsm 29.10.2026 14:44 (nastroje/fakt_html.py).</footer></body></html>
+<footer>Vygenerováno z BoBeton_Fakturace.xlsm 30.10.2026 08:45 (nastroje/fakt_html.py).</footer></body></html>
